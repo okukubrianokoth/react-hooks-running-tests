@@ -1,0 +1,5 @@
+test("displays the text 'please pass this test'", () => {
+  render(<Article />);
+  screen.debug(); // <-- shows DOM in terminal
+  expect(screen.queryByText("please pass this test")).toBeInTheDocument();
+});
